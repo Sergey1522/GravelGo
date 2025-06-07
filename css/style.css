@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Involve SemiBold", sans-serif;
+    src: url("/fonts/Involve-SemiBold.ttf") ;
+}
+@font-face {
+    font-family: "Involve Regular", sans-serif;
+    src: url("/fonts/Involve-Regular.ttf") ;
+}
+@font-face {
+    font-family: "Involve Medium", sans-serif;
+    src: url("/fonts/Involve-Medium.ttf") ;
+}
+@font-face {
+    font-family: "Kudry", sans-serif;
+    src: url("/fonts/kudry_weird-headline.otf") ;
+}
+:root {
+    --font-family: "Involve SemiBold","Involve Regular","Involve Medium", sans-serif;
+    --second-family: "Kudry", sans-serif;
+}
+
+body {
+    font-family: "Kudry","Involve SemiBold","Involve Regular","Involve Medium", sans-serif;
+}
