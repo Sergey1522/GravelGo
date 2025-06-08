@@ -3,27 +3,240 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "Involve SemiBold", sans-serif;
     src: url("/fonts/Involve-SemiBold.ttf") ;
 }
+
 @font-face {
     font-family: "Involve Regular", sans-serif;
     src: url("/fonts/Involve-Regular.ttf") ;
 }
+
 @font-face {
     font-family: "Involve Medium", sans-serif;
     src: url("/fonts/Involve-Medium.ttf") ;
 }
+
 @font-face {
     font-family: "Kudry", sans-serif;
     src: url("/fonts/kudry_weird-headline.otf") ;
 }
+
 :root {
-    --font-family: "Involve SemiBold","Involve Regular","Involve Medium", sans-serif;
+    --font-family: "Involve SemiBold", "Involve Regular", "Involve Medium", sans-serif;
     --second-family: "Kudry", sans-serif;
 }
 
 body {
-    font-family: "Kudry","Involve SemiBold","Involve Regular","Involve Medium", sans-serif;
+    font-family: "Kudry", "Involve SemiBold", "Involve Regular", "Involve Medium", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+
+    border-radius: 8px;
+    background: #109de3;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.header {
+    padding: 42px 0 80px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 123px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #050427;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+
+}
+
+.price-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #050427;
+    margin-right: 11px;
+}
+
+.price-icon {
+    border: 1.50px solid #109de3;
+    border-radius: 4px;
+    padding: 7px 11.5px;
+    width: 32px;
+    height: 32px;
+}
+
+.header-more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 65px;
+    gap: 24px;
+}
+
+.header-more-title {
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 130%;
+    color: #010015;
+
+}
+
+.header-more-action-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    color: #050427;
+    margin-bottom: 24px;
+
+}
+
+.header-btn {
+    padding: 17px;
+    width: 260px;
+    height: 56px;
+}
+
+.products {
+    padding: 80px 0;
+}
+
+.products-title {
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #010015;
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.products-cards {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+.card {
+    padding: 24px;
+    border: 1.50px dashed #109de3;
+    border-radius: 16px;
+    width: 384px;
+    height: 564px;
+}
+.card-img {
+    margin-bottom: 24px;
+}
+.card-desc {
+    margin-bottom: 33px;
+}
+.card-desc-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #050427;
+    margin-bottom: 12px;
+}
+.card-desc-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #050427;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cost {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    color: #050427;
+}
+.person {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #050427;
+}
+.card-btn {
+    padding: 17.5px 0;
+    width: 190px;
+    height: 56px;
+}
+.order {
+    padding: 80px 0 160px 0;
+}
+.order-title {
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #010015;
+    max-width: 486px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.order-form {
+    background-image: url("../images/Фон формы.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 72px 0 99px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
 }
