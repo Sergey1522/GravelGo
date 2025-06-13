@@ -102,6 +102,7 @@ body {
     padding: 7px 11.5px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
 .header-more-info {
