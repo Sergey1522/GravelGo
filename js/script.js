@@ -3,6 +3,24 @@ let sectionProducts = document.getElementById('products');
 let order = document.getElementById('order');
 let linkCatalog = document.getElementById('catalog');
 let linkBooking = document.getElementById('booking');
+let btnCard = document.querySelectorAll('.card-btn');
+let products = document.querySelectorAll('.card');
+let cardTitle = document.querySelectorAll('.card-desc-title');
+let textArea  = document.getElementById('textarea');
+console.log(products);
+
+   for (let i = 0; i < products.length; i++) {
+       btnCard[i].addEventListener('click', () => {
+           scrollingBooking ();
+           textArea.value = cardTitle[i].textContent;
+           console.log(textArea);
+           console.log(cardTitle[i].textContent);
+       })
+
+   }
+
+
+
 
 function scrollingProducts () {
     sectionProducts.scrollIntoView(
@@ -28,6 +46,7 @@ linkCatalog.addEventListener('click', (e) => {
 linkBooking.addEventListener('click', (e) => {
     scrollingBooking ();
 });
+
 
 
 IMask(
