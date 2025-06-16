@@ -7,7 +7,8 @@ let btnCard = document.querySelectorAll('.card-btn');
 let products = document.querySelectorAll('.card');
 let cardTitle = document.querySelectorAll('.card-desc-title');
 let textArea  = document.getElementById('textarea');
-console.log(products);
+let current = document.getElementsByClassName('price-icon')[0];
+console.log(current);
 
    for (let i = 0; i < products.length; i++) {
        btnCard[i].addEventListener('click', () => {
@@ -55,4 +56,13 @@ IMask(
         mask: '+{7} (000) 000-00-00'
     }
 );
+
+current.addEventListener('click', (e) => {
+    let spanDol = document.getElementsByClassName('dol')[0];
+    let spanRub = document.getElementsByClassName('rub')[0];
+    spanDol.classList.toggle('active');
+    spanRub.classList.toggle('active');
+
+})
+
 

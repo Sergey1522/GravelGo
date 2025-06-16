@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px) {
+    .products-img {
+        top: -11%;
+        left: 59%;
+    }
+}
 @media screen and (max-width: 1160px) {
     .container {
         padding: 0 15px;
@@ -19,6 +25,13 @@
 
 @media screen and (max-width: 1023px) {
 
+
+}
+@media screen and (max-width: 820px) {
+    .products-img {
+        top: -4%;
+        left: 62%;
+    }
 
 }
 
