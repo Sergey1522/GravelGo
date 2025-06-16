@@ -257,11 +257,14 @@ body {
 
 .order {
     padding: 80px 0 160px 0;
+
+}
+.order-container {
     position: relative;
 }
 .order-img {
     position: absolute;
-    top: -14%;
+    top: -27%;
     left: 8%;
     img {
         width: 100%;
