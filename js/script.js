@@ -62,7 +62,21 @@ current.addEventListener('click', (e) => {
     let spanRub = document.getElementsByClassName('rub')[0];
     spanDol.classList.toggle('active');
     spanRub.classList.toggle('active');
+    changCurrency();
 
-})
+});
+
+function changCurrency() {
+    let currency = document.querySelectorAll('.currency');
+    let currencyRu = document.querySelectorAll('.currency_ru');
+    let dollarRate = 78.51;
+    for (let i = 0; i < currency.length; i++) {
+        currency[i].classList.toggle('active');
+
+    }
+    for (let i = 0; i < currencyRu.length; i++) {
+        currencyRu[i].classList.toggle('active');
+    }
+}
 
 
