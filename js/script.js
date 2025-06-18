@@ -67,15 +67,28 @@ current.addEventListener('click', (e) => {
 });
 
 function changCurrency() {
+    let cost = document.querySelectorAll('.cost-price');
     let currency = document.querySelectorAll('.currency');
     let currencyRu = document.querySelectorAll('.currency_ru');
     let dollarRate = 78.51;
-    for (let i = 0; i < currency.length; i++) {
-        currency[i].classList.toggle('active');
+    for (let i = 0; i < products.length; i++) {
+        ;
+
+        if(!currencyRu[i].classList.toggle('active')) {
+            let resRu = +cost[i].textContent * +dollarRate;
+            // console.log(+cost[i].textContent)
+            cost[i].textContent = Math.round(+resRu);
+        }
+        if(!currency[i].classList.toggle('active')) {
+            let resRu = +cost[i].textContent / +dollarRate;
+            console.log(+cost[i].textContent)
+            cost[i].textContent = Math.round(+resRu);
+        }
+        // console.log(cost[i][0].textContent);
 
     }
     for (let i = 0; i < currencyRu.length; i++) {
-        currencyRu[i].classList.toggle('active');
+
     }
 }
 
